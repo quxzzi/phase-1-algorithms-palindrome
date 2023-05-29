@@ -1,13 +1,28 @@
-function isPalindrome(word) {
-  // Write your algorithm here
-}
+const { stringify } = require("mocha/lib/utils");
+
+const isPalindrome = str => str === str.split("").reverse().join("");
 
 /* 
-  Add your pseudocode here
+  Function isPalindrome(str):
+    reversedStr = ReverseString(str)
+    If str is equal to reversedStr, Then
+        Return True
+    Else
+        Return False
+
+Function ReverseString(str):
+    reversed = Empty string
+    For i from length of str minus 1 down to 0, decrementing i by 1:
+        reversed = reversed + str[i]
+    Return reversed
+
+    I don't fully understand psuedo-code. I'm not sure how to do it.
 */
 
 /*
-  Add written explanation of your solution here
+  str.split("") will split the string by every character.
+  .reverse() will reverse the string.
+  .join("") will join the reversed string back to the original
 */
 
 // You can run `node index.js` to view these console logs
